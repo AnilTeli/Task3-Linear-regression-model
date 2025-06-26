@@ -61,3 +61,12 @@ print("Mean Absolute Error (MAE):", mae)
 print("Mean Squared Error (MSE):", mse)
 print("Root Mean Squared Error (RMSE):", rmse)
 print("R² Score:", r2score)
+
+
+# Scatter plot with regression line
+sns.regplot(x='MedInc', y='MedHouseVal', data=df, scatter_kws={'color': 'purple'}, line_kws={'color': 'green'})
+
+plt.xlabel('Median Income')
+plt.ylabel('Median House Value')
+plt.title('Regression Plot: Median Income vs. Median House Value')
+plt.show()
